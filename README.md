@@ -44,7 +44,7 @@ to find the users that are in the file but are not following on github anymore.\
 Writing them to an unfollowers file that can be used to unfollow them.
 
 I didn't want one script to do it all.\
-So I have one script to collect the unfollowers and append them to a unfollowers file.\
+So I have one script to collect the unfollowers and append them to an unfollowers file.\
 And another script to use that file to unfollow them.\
 Then at least I can decide when to unfollow.
 
