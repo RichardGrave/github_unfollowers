@@ -23,7 +23,7 @@ When I read that, I thought that was a bit far fetched.\
 But then a few weeks later it happend again.\
 Somebody unfollowed me after I started following that user.\
 I looked on that users profile every day for more than a week.\
-Apparantly he/she started following lots and lots of people and later on removing them.\
+Apparently he/she started following lots and lots of people and later on removing them.\
 Probably using a script or something (like this project)\
 Watching the number of followers slowly rise and the following going up and down every now and then.
 
@@ -36,7 +36,7 @@ Then I followed the github user again and the same day that person unfollowed me
 ## The idea
 That gave me the idea to find the profiles that unfollow me.\
 I came up with this idea more than a year ago,\
-but I always had other things I wanted to created first (also to learn more Rust).
+but I always had other things I wanted to created first (also to learn more Rust).\
 I had almost forgotten about this idea and decided not to postpone it any longer.
 
 So I wanted to keep a file with followers and when I have less followers\
@@ -47,6 +47,16 @@ I didn't want one script to do it all.
 So I have one script to collect the unfollowers and append them to a unfollowers file.\
 And another script to use that file to unfollow them.
 Then at least I can decide when to unfollow.
+
+Just keep in mind that it always needs a file with your current followers.
+
+The first time the find script is executed it only creates a followers file (filename is the given github name).
+If the file exists then every time when the find script is executed,\
+it will overwrite the followers file with your current followers.
+And append unfollowers (if found) in the unfollower file.
+
+If the unfollow script is executed it will unfollow everyone that is in the file\
+and also empty the file.
 
 ## Use at your own risk
 **I created these scripts for myself.**\
