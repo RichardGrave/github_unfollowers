@@ -43,16 +43,16 @@ So I wanted to keep a file with followers and when I have less followers\
 to find the users that are in the file but are not following on github anymore.\
 Writing them to an unfollowers file that can be used to unfollow them.
 
-I didn't want one script to do it all.
+I didn't want one script to do it all.\
 So I have one script to collect the unfollowers and append them to a unfollowers file.\
-And another script to use that file to unfollow them.
+And another script to use that file to unfollow them.\
 Then at least I can decide when to unfollow.
 
 Just keep in mind that it always needs a file with your current followers.
 
-The first time the find script is executed it only creates a followers file (filename is the given github name).
+The first time the find script is executed it only creates a followers file (filename is the given github name).\
 If the file exists then every time when the find script is executed,\
-it will overwrite the followers file with your current followers.
+it will overwrite the followers file with your current followers.\
 And append unfollowers (if found) in the unfollower file.
 
 If the unfollow script is executed it will unfollow everyone that is in the file\
