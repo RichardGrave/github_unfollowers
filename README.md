@@ -75,7 +75,7 @@ That ofcourse contains the Personal Access Token.
 
 If you copy this project then **NEVER** commit your token.
 I use an .ignore file that excludes the '.txt' files,\
-but **ALWAYS** be carefull when commiting files.
+but **ALWAYS** be careful when committing files.
 You don't want anyone to use your token and mess up your github profile.
 
 You can run the find_followers script like this:\
