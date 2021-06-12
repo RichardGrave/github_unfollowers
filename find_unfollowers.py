@@ -43,7 +43,7 @@ def get_unfollowers(followers, user):
             followers_from_file = [line.replace("\n", "") for line in reader]
 
         # Look at both lists and find the differences
-        unfollower_names = [follower for follower in followers if follower not in followers_from_file]
+        unfollower_names = [follower for follower in followers_from_file if follower not in followers]
 
         # Create the unfollowers file or append to existing unfollowers file
         create_file(user, unfollower_names, True, APPEND)
